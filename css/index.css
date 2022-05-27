@@ -16,4 +16,250 @@
   font-style: normal;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: Verdana, Arial;
+  font-size: 0.8rem;
+}
 
+/* small screens (default) */
+html {
+  font-size: 100%;
+}
+/* medium screens (640px) */
+@media (min-width: 40rem) {
+  html {
+    font-size: 112%;
+  }
+}
+/* large screens (1024px) */
+@media (min-width: 64rem) {
+  html {
+    font-size: 120%;
+  }
+}
+
+.sea-wrapper {
+
+}
+
+.sea-header {
+  min-height: 70px;
+  margin-bottom: 0px;
+  border: 0px;
+  background-color: #fff;
+}
+
+.sea-header a {
+  color: #555;
+}
+
+.sea-navbar {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f5f5;
+}
+
+.sea-logo {
+  height: 50px;
+}
+
+.sea-title {
+  font-family: 'ft-zgljsz';
+  font-size: 36px;
+}
+
+.sea-catalog {
+  height: 50px;
+  line-height: 50px;
+  margin-top: 2px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.sea-searchbar {
+  padding: 10px 16px;
+  margin-right: 60px;
+}
+
+.sea-search-btn {
+  display: inline-block;
+  line-height: 100%;
+  cursor: pointer;
+  margin-top: -10px;
+  margin-left: -40px;
+  border: 0;
+  background-color: transparent;
+}
+
+.sea-body {
+  margin-top: 80px;
+}
+
+.sea-sidebar {
+  padding-right: 0px;
+}
+
+.sea-sidebar .panel-title {
+  color: #555;
+}
+
+.sea-cat-index {
+  position: fixed;
+  top: 80px;
+  width: 200px;
+  z-index: 999;
+  color: #555;
+}
+
+.sea-cat-index-wrapper {
+  height: 420px;
+  padding: 0px;
+  border: 1px solid #f1f2f3;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+.sea-cat-index-wrapper ul, .sea-cat-index-wrapper li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.sea-cat-index-item {
+  display: block;
+  padding: 0 15px;
+  border-bottom: 1px solid #f1f2f3;
+  box-sizing: border-box;
+  line-height: 40px;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sea-cat-index-item:visited {
+  text-decoration: none;
+}
+.sea-cat-index-item:hover, .sea-cat-index-item:active {
+  color: #f44336;
+  background-color: #f8f8f8;
+  text-decoration: none;
+}
+
+.sea-cat-index-wrapper a.active {
+  color: #f44336;
+  background-color: #f8f8f8;
+  text-decoration: none;
+}
+
+.sea-content {
+
+}
+
+.sea-cat-detail {
+
+}
+
+.sea-cat-detail .panel-title {
+  color: #555;
+}
+
+.sea-cat-detail-wrapper {
+  padding: 0px 0px 15px;
+}
+
+.sea-cat-detail-item {
+  margin-top: 15px;
+  padding-left: 0px;
+  padding-right: 15px;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.sea-cat-detail-item:hover {
+  background-color: rgba(0,0,0,.08);
+}
+
+.sea-cat-detail-card {
+  display: inline-block;
+  width: 100%;
+}
+
+.sea-cat-detail-item-link {
+  margin-top: 5px;
+  color: #555;
+  font-size: 16px;
+  text-decoration: none;
+}
+.sea-cat-detail-item-link:visited {
+  color: #555;
+  text-decoration: none;
+}
+.sea-cat-detail-item-link:hover, .sea-cat-detail-item-link:active {
+  color: #333;
+  text-decoration: none;
+}
+.sea-cat-detail-item a.pull-left {
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.sea-cat-detail-item-img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 50%;
+}
+
+.sea-cat-detail-item-desc {
+  margin-bottom: 0px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 13px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sea-context {
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+
+.sea-backtop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 9999;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 20px;
+  color: #555;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar, body .scrollbar-track-color {
+  height: 9px;
+  width: 7px;
+  background: #E6E6E6;
+}
+::-webkit-scrollbar:hover {
+  background: #CCCCCC;
+}
+::-webkit-scrollbar-thumb {
+  background: #A2A2A2;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}

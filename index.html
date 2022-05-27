@@ -22,6 +22,60 @@
   </script>
 </head>
 <body>
+  <div class="sea-wrapper">
+    <header class="navbar navbar-static-top navbar-fixed-top sea-header">
+      <div class="container-fluid sea-navbar">
+        <div class="navbar-header col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <a class="navbar-brand sea-logo" href="#" title="瑯環福地">
+            <span class="sea-title">瑯環福地</span>
+          </a>
+          <nav class="collapse navbar-collapse">
+            <a class="pull-right sea-catalog" href="#" title="目录分类">
+              <i class="glyphicon glyphicon-th-large"></i>
+            </a>
+            <div class="sea-searchbar pull-right">
+              <form class="form-inline">
+                <div class="input-group">
+                  <input class="form-control" type="text" name="keywords" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      &nbsp;<i class="glyphicon glyphicon-search"></i>&nbsp;
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container-fluid sea-body">
+      <div id="cat-page" class="row">
+        <div class="hidden-xs col-sm-2 col-md-2 col-lg-2 sea-sidebar">
+          <div class="panel panel-default sea-cat-index">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                <i class="glyphicon glyphicon-list"></i>&nbsp;分类索引
+              </h3>
+            </div>
+            <div class="panel-body sea-cat-index-wrapper">
+              <ul id="sidebar-area"></ul>
+            </div>
+          </div>
+        </div>
+        <div id="main-area" class="col-xs-12 col-sm-10 col-md-10 col-lg-10 sea-content">
 
+        </div>
+      </div>
+      <div id="ctx-page" class="row">
+        <div id="context-area" class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 sea-context">
+
+        </div>
+      </div>
+    </div>
+    <div class="sea-backtop" title="Back to Top" onclick="back_to_top()">
+      <i class="glyphicon glyphicon-arrow-up"></i>
+    </div>
+  </div>
 </body>
 </html>
