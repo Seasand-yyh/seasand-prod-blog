@@ -164,7 +164,7 @@ function render_main_menu_child_template(data) {
   template += '        <img class="sea-cat-detail-item-img" src="'+icon+'" alt="img">';
   template += '      </a>';
   template += '      <a class="sea-cat-detail-item-link" href="javascript:void(0);" title="'+name+'">'+name+'</a>';
-  template += '      <div class="help-block sea-cat-detail-item-desc" title="'+desc+'">'+desc+'</div>';
+  template += '      <div class="help-block sea-cat-detail-item-desc" title="'+desc+'">简介：'+desc+'</div>';
   template += '    </div>';
   template += '  </div>';
   template += '</div>';
