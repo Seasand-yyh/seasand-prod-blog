@@ -42,7 +42,7 @@ html {
 }
 
 .sea-wrapper {
-
+  padding-bottom: 80px;
 }
 
 .sea-header {
@@ -228,6 +228,123 @@ html {
 .sea-context {
   font-size: 0.8rem;
   line-height: 1.3rem;
+}
+
+.sea-context .hljs {
+  background-color: #272822;
+}
+
+.sea-context h1 {
+  font-size: 28px;
+}
+.sea-context h2 {
+  font-size: 24px;
+}
+.sea-context h3 {
+  font-size: 20px;
+  margin-top: 36px;
+}
+
+.sea-context hr {
+  border-top-color: #999;
+}
+
+.sea-context pre {
+  padding: 0;
+  font-size: 1em;
+}
+
+.sea-context blockquote {
+  color: #777 !important;
+  font-style: normal !important;
+  border-left: 4px solid #D6DBDF;
+  font-size: 14px;
+  background: #f9f2f4;
+  margin: 8px 0;
+  padding: 8px;
+}
+
+.sea-context code {
+  font-family: Consolas,"Courier New",Courier,FreeMono,monospace;
+}
+
+.sea-context p code,
+.sea-context li>code,
+.sea-context h2>code,
+.sea-context h3>code {
+  padding-left: 3px;
+  padding-right: 3px;
+  color: #c7254e;
+  background: #f9f2f4;
+}
+
+.sea-context img {
+  max-width: 98%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sea-context ul {
+  display: block;
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.sea-context ol {
+  display: block;
+  list-style-position: inside;
+  padding-left: 10px;
+}
+
+.sea-context ul li:before {
+  content: "\2726";
+  position: relative;
+  left: -5px;
+}
+
+.sea-context ul li,
+.sea-context ol li {
+  font-size: 0.8rem;
+}
+
+.sea-context ul li p,
+.sea-context ol li p {
+  display: inline-block;
+}
+
+.sea-context a:link, .sea-context a:visited {
+  color: #4682BE;
+  text-decoration: none;
+}
+.sea-context a:hover {
+  text-decoration: underline;
+}
+
+.sea-context table:not(.hljs-ln) {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+.sea-context table:not(.hljs-ln) th {
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+.sea-context table:not(.hljs-ln) th,
+.sea-context table:not(.hljs-ln) td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+.sea-context table:not(.hljs-ln) tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+.sea-context table:not(.hljs-ln) tr:nth-child(2n) {
+  background-color: #f8f8f8;
 }
 
 .sea-backtop {

@@ -254,7 +254,87 @@ function scroll_page(top, time) {
 function load_docs(path) {
   if(!path)
     return;
-
+  $.get(path, function(data) {
+    if(!data)
+      return;
+    trans_docs(CTX_CONTEXT_AREA, data);
+  }, 'text').fail(function(e) {
+    alert("Opps! can't find this file to display!");
+    console.error('[load_docs]', e);
+  });
 }
 
+/**
+ * trans_docs
+ * @param  [obj] ctx
+ * @param  [string] doc
+ * @return [void]
+ */
+function trans_docs(ctx, doc) {
+  if(!doc)
+    return;
+  // replace '' into %20 in doc
+  doc = doc.replace(/(\[.*\]\(\S+)(\s+)(\S+\))/g, '$1%20$3');
 
+  // trans md to html
+  $(ctx).html(marked(doc));
+
+  // fix paths
+  normalize_paths(ctx);
+
+  // highlight codes
+  code_highlight(ctx);
+
+  // do some other things
+  supplement(ctx);
+}
+
+/**
+ * code_highlight
+ * @param  [obj] ctx
+ * @return [void]
+ */
+function code_highlight(ctx) {
+  // code block highlight
+  $('pre code', ctx).map(function() {
+    hljs.highlightElement(this);
+  });
+
+  // code block linenumbers
+  $('pre code.hljs', ctx).map(function() {
+    hljs.lineNumbersBlock(this, {
+      singleLine: true
+    });
+  });
+}
+
+/**
+ * normalize_paths
+ * @param  [obj] ctx
+ * @return [void]
+ */
+function normalize_paths(ctx) {
+  $('img', ctx).map(function() {
+    var src = $(this).attr('src');
+    if (src.slice(0, 4) === 'http' || src.slice(0, 5) === 'https') {
+      return;
+    }
+    src = src.replace('./', '');
+    var base_path = location.hash.substring(1, location.hash.lastIndexOf('/'));
+    $(this).attr('src', base_path + '/' + src);
+  });
+}
+
+/**
+ * supplement
+ * @param  [obj] ctx
+ * @return [void]
+ */
+function supplement(ctx) {
+  $('a', ctx).map(function() {
+    var href = $(this).attr('href');
+    if (href.slice(0, 4) === 'http' || href.slice(0, 5) === 'https') {
+      $(this).attr('target', '_blank');
+    }
+  });
+}
