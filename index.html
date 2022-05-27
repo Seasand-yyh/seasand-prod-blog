@@ -3,53 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="author" content="Seasand-yyh">
-  <meta name="description" content="QNote">
-  <meta http-equiv="keywords" content="QNote">
+  <meta name="description" content="琅嬛福地 ● seasand-prod-blog ● Seasand-yyh">
+  <meta http-equiv="keywords" content="琅嬛福地 ● seasand-prod-blog ● Seasand-yyh">
   <title>琅嬛福地</title>
   <link type="image/x-icon" rel="shortcut icon" href="./favicon.ico">
   <link type="image/x-icon" rel="icon" href="./favicon.ico">
-  <link rel="stylesheet" type="text/css" href="./css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="./css/monokai-sublime.css">
-  <link rel="stylesheet" type="text/css" href="./css/bootstrap-3.3.5.min.css">
-  <link rel="stylesheet" type="text/css" href="./css/app.css">
-  <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="./js/marked.js"></script>
-  <script type="text/javascript" src="./js/highlight.pack.js"></script>
-  <script type="text/javascript" src="./js/bootstrap-3.3.5.min.js"></script>
-  <script type="text/javascript" src="./js/app.js"></script>
+  <link rel="stylesheet" type="text/css" href="./assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/highlight/css/monokai-sublime.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/highlight/css/highlightjs-line-numbers.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <script type="text/javascript" src="./assets/jquery-1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="./assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./assets/marked/marked.min.js"></script>
+  <script type="text/javascript" src="./assets/highlight/js/highlight.min.js"></script>
+  <script type="text/javascript" src="./assets/highlight/js/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
   <script type="text/javascript">
     $(function() {
-      app.init();
+      init();
     });
   </script>
 </head>
 <body>
-  <div id="wrapper">
-    <!-- sidebar start -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper">
-      <div class="sidebar-brand"><a href="#">琅嬛福地</a></div>
-      <ul class="nav sidebar-nav"></ul>
-    </nav>
-    <!-- sidebar end -->
-    <!-- page content start -->
-    <div id="page-content-wrapper">
-      <button type="button" class="hamburger is-closed animated" id="trigger">
-        <span class="hamb-top"></span>
-        <span class="hamb-middle"></span>
-        <span class="hamb-bottom"></span>
-      </button>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 col-lg-offset-1">
-            <a id="page-content-top" style="width:0;height:0;"></a>
-            <div id="page-content"></div>
+  <div class="sea-wrapper">
+    <header class="navbar navbar-static-top navbar-fixed-top sea-header">
+      <div class="container-fluid sea-navbar">
+        <div class="navbar-header col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <a class="navbar-brand sea-logo" href="#" title="琅嬛福地">
+            <span class="sea-title">琅嬛福地</span>
+          </a>
+          <nav class="collapse navbar-collapse">
+            <a class="pull-right sea-catalog" href="#" title="目录分类">
+              <i class="glyphicon glyphicon-th-large"></i>
+            </a>
+            <div class="sea-searchbar pull-right">
+              <form class="form-inline">
+                <div class="input-group">
+                  <input class="form-control" type="text" name="keywords" placeholder="Search for ...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      &nbsp;<i class="glyphicon glyphicon-search"></i>&nbsp;
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container-fluid sea-body">
+      <div id="cat-page" class="row">
+        <div class="hidden-xs col-sm-2 col-md-2 col-lg-2 sea-sidebar">
+          <div class="panel panel-default sea-cat-index">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                <i class="glyphicon glyphicon-list"></i>&nbsp;分类索引
+              </h3>
+            </div>
+            <div class="panel-body sea-cat-index-wrapper">
+              <ul id="sidebar-area"></ul>
+            </div>
           </div>
+        </div>
+        <div id="main-area" class="col-xs-12 col-sm-10 col-md-10 col-lg-10 sea-content">
+
+        </div>
+      </div>
+      <div id="ctx-page" class="row">
+        <div id="context-area" class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 sea-context">
+
         </div>
       </div>
     </div>
-    <!-- page content end -->
+    <div class="sea-backtop" title="Back to Top" onclick="back_to_top();">
+      <i class="glyphicon glyphicon-arrow-up"></i>
+    </div>
   </div>
 </body>
 </html>

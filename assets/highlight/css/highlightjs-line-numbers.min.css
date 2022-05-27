@@ -1,0 +1,49 @@
+/**
+ * highlightjs-line-numbers
+ */
+
+.hljs-ln {
+
+}
+
+/* select all lines, including line numbers */
+.hljs-ln-line {
+
+}
+
+/* select all line numbers, excluding lines of code */
+.hljs-ln-numbers {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  text-align: right;
+  color: #afafaf;
+  min-width: 50px;
+  border-right: 1px solid #afafaf;
+  vertical-align: top;
+  padding-right: 10px !important;
+}
+
+/* select all lines of code, excluding line numbers */
+.hljs-ln-code {
+  padding-left: 10px !important;
+}
+
+/* select the ith line, including line number */
+.hljs-ln-line[data-line-number="i"] {
+
+}
+
+/* select the ith line number, excluding the line of code */
+.hljs-ln-numbers[data-line-number="i"] {
+
+}
+
+/* select the ith line of code, excluding the line number */
+.hljs-ln-code[data-line-number="i"] {
+
+}
