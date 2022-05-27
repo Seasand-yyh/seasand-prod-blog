@@ -175,6 +175,7 @@ html {
 }
 
 .sea-cat-detail-wrapper {
+  min-height: 108px;
   padding: 0px 0px 15px;
 }
 
