@@ -20,6 +20,7 @@ html, body {
   margin: 0;
   padding: 0;
   color: #777;
+  background-color: #f4f6f9;
   font-family: Verdana, Arial;
   font-size: 0.8rem;
 }
@@ -49,7 +50,7 @@ html {
   min-height: 70px;
   margin-bottom: 0px;
   border: 0px;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .sea-header a {
@@ -233,8 +234,15 @@ html {
 }
 
 .sea-context {
+  padding: 20px 40px;
+  border: 1px solid #ebeef5;
+  border-radius: 4px;
+  color: #303133;
+  background-color: #fff;
   font-size: 0.8rem;
   line-height: 1.3rem;
+  -webkit-box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
 }
 
 .sea-context .hljs {
@@ -253,7 +261,7 @@ html {
 }
 
 .sea-context hr {
-  border-top-color: #999;
+  border-top-color: #ccc;
 }
 
 .sea-context pre {
