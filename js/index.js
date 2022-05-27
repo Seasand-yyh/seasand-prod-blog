@@ -161,7 +161,7 @@ function render_main_menu_child_template(data) {
   template += '  <div class="sea-cat-detail-item">';
   template += '    <div class="sea-cat-detail-card">';
   template += '      <a class="pull-left sea-cat-detail-item-link" href="javascript:void(0);">';
-  template += '        <img class="sea-cat-detail-item-img" src="'+icon+'" alt="img">';
+  template += '        <img class="sea-cat-detail-item-img" src="'+icon+'" alt="img" onerror="this.src=\''+default_icon+'\'">';
   template += '      </a>';
   template += '      <a class="sea-cat-detail-item-link" href="javascript:void(0);" title="'+name+'">'+name+'</a>';
   template += '      <div class="help-block sea-cat-detail-item-desc" title="'+desc+'">简介：'+desc+'</div>';
