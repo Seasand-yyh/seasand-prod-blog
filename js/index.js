@@ -274,7 +274,7 @@ function trans_docs(ctx, doc) {
   if(!doc)
     return;
   // replace '' into %20 in doc
-  doc = doc.replace(/(\[.*\]\(\S+)(\s+)(\S+\))/g, '$1%20$3');
+  // doc = doc.replace(/(\[.*\]\(\S+)(\s+)(\S+\))/g, '$1%20$3');
 
   // trans md to html
   $(ctx).html(marked(doc));
