@@ -1,0 +1,27 @@
+[{
+  "id": "frontend", "name": "前端开发", "pid": "frontend"
+}, {
+  "id": "backend", "name": "后端开发", "pid": "backend"
+}, {
+  "id": "java", "name": "Java开发", "pid": "java"
+}, {
+  "id": "app", "name": "移动端", "pid": "app"
+}, {
+  "id": "design", "name": "平面设计", "pid": "design"
+}, {
+  "id": "game", "name": "游戏开发", "pid": "game"
+}, {
+  "id": "os", "name": "操作系统", "pid": "os"
+}, {
+  "id": "database", "name": "数据库", "pid": "database"
+}, {
+  "id": "network", "name": "网络通讯", "pid": "network"
+}, {
+  "id": "middleware", "name": "中间件", "pid": "middleware"
+}, {
+  "id": "devtools", "name": "开发工具", "pid": "devtools"
+}, {
+  "id": "advanced", "name": "高级进阶", "pid": "advanced"
+}, {
+  "id": "others", "name": "其它", "pid": "others"
+}]
