@@ -7,6 +7,11 @@
   "title": "Demo Article - Frontend",
   "tags": ["frontend"]
 }, {
+  "date": "2018-06-22",
+  "title": "百度一下",
+  "addr": "https://www.baidu.com",
+  "tags": ["others"]
+}, {
   "date": "2019-02-08",
   "title": "Demo Article - Java & Backend",
   "tags": ["backend", "java"]

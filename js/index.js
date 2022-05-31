@@ -113,12 +113,12 @@ function format_docs_data() {
       if(!map[key]) {
         map[key] = [];
       }
-      map[key].push({
-        'date': doc.date,
-        'title': doc.title,
-        'tags': doc.tags,
-        'icon': tag
+      var newDoc = {};
+      Object.keys(doc).forEach(function(k) {
+        newDoc[k] = doc[k];
       });
+      newDoc.icon = tag;
+      map[key].push(newDoc);
     });
   });
   DOCS_DATA_MAP = map;
@@ -266,13 +266,14 @@ function render_docs_view(data) {
     return '';
   var date = data.date;
   var title = data.title;
+  var addr = data.addr || '';
   var tags = data.tags.join('、');
   var icon = data.icon;
   var default_icon_path = ICON_PATH + '/default.png';
   var icon_path = icon ? (ICON_PATH + '/' + icon + '.png') : default_icon_path;
 
   var template = '';
-  template += '<div class="blog-article-item" date="' + date + '" title="' + title + '" onclick="docs_view_handler(this);">';
+  template += '<div class="blog-article-item" date="' + date + '" title="' + title + '" addr="' + addr + '" onclick="docs_view_handler(this);">';
   template += '  <a class="blog-article-link blog-article-icon pull-left" href="javascript:void(0);">';
   template += '    <img src="' + icon_path + '" alt="img" onerror="this.src=\'' + default_icon_path + '\'">';
   template += '  </a>';
@@ -293,9 +294,14 @@ function render_docs_view(data) {
 function docs_view_handler(item) {
   var date = $(item).attr('date');
   var title = $(item).attr('title');
-  var filename = date + ' ' + title;
-  var path = DOCS_BASE + '/' + filename + '/' + DOCS_INDEX;
-  window.location.hash = path;
+  var addr = $(item).attr('addr');
+  if(addr) {
+    window.open(addr);
+  } else {
+    var filename = date + ' ' + title;
+    var path = DOCS_BASE + '/' + filename + '/' + DOCS_INDEX;
+    window.location.hash = path;
+  }
 }
 
 /**
