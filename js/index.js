@@ -249,11 +249,14 @@ function tags_view_handler(item) {
  */
 function init_docs_view(ctx, datalist) {
   var html = '';
+  var count = 0;
   if(datalist && datalist.length>0) {
     var template = datalist.map(render_docs_view);
     html += template.join('');
+    count = datalist.length;
   }
   $(ctx).html(html);
+  $('#docs-count').text('(' + count + ')');
 }
 
 /**
@@ -493,10 +496,10 @@ function sort(docs) {
 function router() {
   var path = location.hash.replace(/#([^#]*)(#.*)?/, './$1');
   if (!path || path == '') {
-    // open index page if hash is empty
+    //open index page if hash is empty
     open_index_page();
   } else {
-    // otherwise, open context page and load doc
+    //otherwise, open context page and load doc
     open_context_page();
     path = path + DOCS_SUFFIX;
     load_docs(path);
@@ -522,7 +525,7 @@ function load_docs(path) {
       }
     },
     error: function(e) {
-      //alert('Opps! can not find this file to display!');
+      //alert('Opps! can not find this file[' + path + '] to display!');
       console.error('[load_docs]', e);
     }
   });
@@ -659,3 +662,5 @@ function scroll_page(top, time) {
   time = time || 1000;
   $('html,body').animate({'scrollTop': top}, time);
 }
+
+/** the end */

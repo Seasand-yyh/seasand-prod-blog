@@ -50,7 +50,7 @@
             <div class="blog-searchbar pull-right">
               <form class="form-inline">
                 <div class="input-group">
-                  <input class="form-control" type="text" name="keywords" placeholder="Search for ...">
+                  <input class="form-control" type="search" name="keywords" placeholder="Search for ...">
                   <span class="input-group-addon" style="cursor: pointer;" onclick="search();">
                     &nbsp;<i class="glyphicon glyphicon-search"></i>&nbsp;
                   </span>
@@ -72,7 +72,7 @@
         <div class="row blog-search-area visible-xs">
           <form>
             <div class="input-group input-group-lg">
-              <input class="form-control" type="text" name="keywords" placeholder="Search for ...">
+              <input class="form-control" type="search" name="keywords" placeholder="Search for ...">
               <span class="input-group-addon" style="cursor: pointer;" onclick="search();">
                 &nbsp;<i class="glyphicon glyphicon-search"></i>&nbsp;
               </span>
@@ -92,7 +92,10 @@
         <div class="row blog-article-area col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title"><i class="glyphicon glyphicon-th"></i>&nbsp;文章列表</h3>
+              <h3 class="panel-title">
+                <i class="glyphicon glyphicon-th"></i>&nbsp;文章列表
+                <span id="docs-count" style="font-size: 14px;">(0)</span>
+              </h3>
             </div>
             <div id="docs-area" class="panel-body blog-article-list">
 
@@ -120,3 +123,4 @@
   </div>
 </body>
 </html>
+<!-- the end -->

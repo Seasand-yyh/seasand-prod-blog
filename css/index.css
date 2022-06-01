@@ -111,7 +111,7 @@ html {
 }
 
 .blog-search-area {
-  margin: 0px 0px 20px 0px;
+  margin: 0 0 20px 0;
   padding: 0 20px;
 }
 
@@ -190,7 +190,7 @@ html {
 }
 
 .blog-article-icon {
-  margin-top: 0px;
+  margin-top: 0;
   margin-right: 10px;
 }
 
@@ -209,7 +209,7 @@ html {
 }
 
 .blog-article-desc {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   height: 20px;
   line-height: 20px;
   font-size: 12px;
@@ -285,16 +285,22 @@ html {
   margin-bottom: 20px;
 }
 
+.blog-context-area p {
+  margin-bottom: 2px;
+}
+
 .blog-context-area ul {
   display: block;
   list-style-type: none;
   padding-left: 10px;
+  margin-bottom: 10px;
 }
 
 .blog-context-area ol {
   display: block;
   list-style-position: inside;
   padding-left: 10px;
+  margin-bottom: 10px;
 }
 
 .blog-context-area ul li:before {
@@ -397,3 +403,5 @@ html {
   -o-border-radius: 6px;
   border-radius: 6px;
 }
+
+/** the end */
