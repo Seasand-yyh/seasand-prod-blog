@@ -635,7 +635,8 @@ function open_context_page() {
  * @return [void]
  */
 function return_index() {
-  window.location.hash = '';
+  //window.location.hash = '';
+  window.history.back();
 }
 
  /**
