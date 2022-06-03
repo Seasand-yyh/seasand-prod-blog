@@ -173,6 +173,7 @@ function render_cate_view(data) {
 function cate_view_handler(item) {
   var cateId = $(item).attr('cateId');
   CUR_CATE_ID = cateId;
+  CUR_TAGS_ID = 'all';
 
   var tags = [];
   if(!cateId) {
@@ -270,7 +271,14 @@ function render_docs_view(data) {
   var date = data.date;
   var title = data.title;
   var addr = data.addr || '';
-  var tags = data.tags.join('、');
+  var tags = data.tags.map(function(tagId) {
+    var tagsData = TAGS_DATA.filter(function(tag) {
+      return tag.id == tagId;
+    });
+    return tagsData[0];
+  }).map(function(tag) {
+    return tag.name;
+  }).join('、');
   var icon = data.icon;
   var default_icon_path = ICON_PATH + '/default.png';
   var icon_path = icon ? (ICON_PATH + '/' + icon + '.png') : default_icon_path;
