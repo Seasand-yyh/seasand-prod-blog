@@ -282,13 +282,16 @@ function render_docs_view(data) {
   var icon = data.icon;
   var default_icon_path = ICON_PATH + '/default.png';
   var icon_path = icon ? (ICON_PATH + '/' + icon + '.png') : default_icon_path;
+  var title_tips_style = addr ? 'glyphicon glyphicon-link' : 'glyphicon glyphicon-book';
 
   var template = '';
   template += '<div class="blog-article-item" date="' + date + '" title="' + title + '" addr="' + addr + '" onclick="docs_view_handler(this);">';
   template += '  <a class="blog-article-link blog-article-icon pull-left" href="javascript:void(0);">';
   template += '    <img src="' + icon_path + '" alt="img" onerror="this.src=\'' + default_icon_path + '\'">';
   template += '  </a>';
-  template += '  <a class="blog-article-link blog-article-title" href="javascript:void(0);" title="' +title+ '">' + title+ '</a>';
+  template += '  <a class="blog-article-link blog-article-title" href="javascript:void(0);" title="' + title + '">';
+  template += '    <span class="blog-article-title-tips ' + title_tips_style + '"></span>&nbsp;' + title;
+  template += '  </a>';
   template += '  <div class="help-block blog-article-desc">';
   template += '    <span>标签：' + tags + '</span>';
   template += '    <span class="pull-right">' + date + '</span>';

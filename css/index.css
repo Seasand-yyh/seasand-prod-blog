@@ -208,6 +208,11 @@ html {
   text-overflow: ellipsis;
 }
 
+.blog-article-title-tips {
+  margin-right: 2px;
+  font-size: 14px;
+}
+
 .blog-article-desc {
   margin-bottom: 0;
   height: 20px;
