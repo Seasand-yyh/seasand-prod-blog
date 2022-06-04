@@ -1,1 +1,17 @@
-[]
+[
+  {"id": "java", "name": "Java"},
+  {"id": "backend", "name": "后端"},
+  {"id": "frontend", "name": "前端"},
+  {"id": "app", "name": "移动端"},
+  {"id": "algormode", "name": "算法&模式"},
+  {"id": "os", "name": "操作系统"},
+  {"id": "network", "name": "网络&安全"},
+  {"id": "database", "name": "数据库"},
+  {"id": "middleware", "name": "中间件"},
+  {"id": "devops", "name": "测试&运维"},
+  {"id": "design", "name": "设计"},
+  {"id": "forward", "name": "前沿"},
+  {"id": "advanced", "name": "进阶"},
+  {"id": "tools", "name": "工具"},
+  {"id": "others", "name": "其它"}
+]
