@@ -303,4 +303,8 @@
   "date": "2019-09-09",
   "title": "23种设计模式与案例（Java）",
   "tags": ["design.pattern"]
+}, {
+  "date": "2019-10-29",
+  "title": "加密算法初识",
+  "tags": ["network.security"]
 }]
