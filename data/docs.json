@@ -39,4 +39,8 @@
   "date": "2014-03-15",
   "title": "HTML文档流结束时使用document.write",
   "tags": ["html"]
+}, {
+  "date": "2014-04-08",
+  "title": "Eclipse解除限制被禁止使用的类",
+  "tags": ["ide"]
 }]
