@@ -307,4 +307,8 @@
   "date": "2019-10-29",
   "title": "加密算法初识",
   "tags": ["network.security"]
+}, {
+  "date": "2019-11-08",
+  "title": "JVM基础知识汇总",
+  "tags": ["javase"]
 }]
