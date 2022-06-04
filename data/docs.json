@@ -137,4 +137,8 @@
   "date": "2016-01-06",
   "title": "单例设计模式的5种实现方式（Java）",
   "tags": ["design.pattern", "java"]
+}, {
+  "date": "2016-02-08",
+  "title": "百度前端编码规范",
+  "tags": ["code.standard"]
 }]
