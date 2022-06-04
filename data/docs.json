@@ -121,4 +121,8 @@
   "date": "2015-09-20",
   "title": "Chrome浏览器处理本地Ajax跨域",
   "tags": ["browser"]
+}, {
+  "date": "2015-10-13",
+  "title": "正则表达式简易手册",
+  "tags": ["regexp"]
 }]
