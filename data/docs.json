@@ -6,4 +6,9 @@
   "date": "2013-10-08",
   "title": "Windows系统创建Git SSH Key步骤",
   "tags": ["git"]
+}, {
+  "date": "2013-10-25",
+  "title": "Git教程-廖雪峰",
+  "addr": "https://www.liaoxuefeng.com/wiki/896043488029600",
+  "tags": ["git"]
 }]
