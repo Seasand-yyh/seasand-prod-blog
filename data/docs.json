@@ -35,4 +35,8 @@
   "date": "2014-03-08",
   "title": "HTML中引用JS的几种形式",
   "tags": ["html", "javascript"]
+}, {
+  "date": "2014-03-15",
+  "title": "HTML文档流结束时使用document.write",
+  "tags": ["html"]
 }]
