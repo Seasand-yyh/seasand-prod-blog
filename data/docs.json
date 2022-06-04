@@ -149,4 +149,8 @@
   "date": "2016-04-02",
   "title": "PowerDesigner连接MySQL逆向生成PDM",
   "tags": ["mysql"]
+}, {
+  "date": "2016-05-13",
+  "title": "SQLServer2008安装教程",
+  "tags": ["sqlserver"]
 }]
