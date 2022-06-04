@@ -189,4 +189,8 @@
   "date": "2017-03-03",
   "title": "MySQL案例练习笔记",
   "tags": ["mysql"]
+}, {
+  "date": "2017-04-16",
+  "title": "Mybatis快速入门",
+  "tags": ["mybatis"]
 }]
