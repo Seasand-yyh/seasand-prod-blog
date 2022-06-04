@@ -83,4 +83,9 @@
   "date": "2015-03-05",
   "title": "MySQL基础学习笔记",
   "tags": ["mysql"]
+}, {
+  "date": "2015-03-08",
+  "title": "JavaScript标准参考教程-阮一峰",
+  "addr": "http://javascript.ruanyifeng.com/",
+  "tags": ["javascript"]
 }]
