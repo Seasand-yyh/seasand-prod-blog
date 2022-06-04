@@ -283,4 +283,8 @@
   "date": "2019-04-19",
   "title": "ELK运维文档(DTX)",
   "tags": ["elk"]
+}, {
+  "date": "2019-04-22",
+  "title": "Kibana简易使用教程(DTX)",
+  "tags": ["elk"]
 }]
