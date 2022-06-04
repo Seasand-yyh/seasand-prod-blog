@@ -243,4 +243,8 @@
   "date": "2018-03-15",
   "title": "MySQL的预编译功能",
   "tags": ["mysql"]
+}, {
+  "date": "2018-05-13",
+  "title": "SQLServer开发技巧汇总",
+  "tags": ["sqlserver"]
 }]
