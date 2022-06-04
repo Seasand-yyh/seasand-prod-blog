@@ -79,4 +79,8 @@
   "date": "2015-02-18",
   "title": "script标签属性async和defer",
   "tags": ["html", "javascript"]
+}, {
+  "date": "2015-03-05",
+  "title": "MySQL基础学习笔记",
+  "tags": ["mysql"]
 }]
