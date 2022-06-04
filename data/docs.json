@@ -161,4 +161,8 @@
   "date": "2016-08-11",
   "title": "MySQL数据类型",
   "tags": ["mysql"]
+}, {
+  "date": "2016-08-12",
+  "title": "MySQL常用函数",
+  "tags": ["mysql"]
 }]
