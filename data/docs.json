@@ -31,4 +31,8 @@
   "date": "2014-02-12",
   "title": "Java基础习题汇总",
   "tags": ["javase"]
+}, {
+  "date": "2014-03-08",
+  "title": "HTML中引用JS的几种形式",
+  "tags": ["html", "javascript"]
 }]
