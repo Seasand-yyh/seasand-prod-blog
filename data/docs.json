@@ -387,4 +387,8 @@
   "date": "2021-09-06",
   "title": "PostgreSQL安装指南",
   "tags": ["postgresql"]
+}, {
+  "date": "2022-02-20",
+  "title": "混沌测试工具ChaosBlade使用指南",
+  "tags": ["chaostest"]
 }]
