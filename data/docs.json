@@ -88,4 +88,13 @@
   "title": "JavaScript标准参考教程-阮一峰",
   "addr": "http://javascript.ruanyifeng.com/",
   "tags": ["javascript"]
+}, {
+  "date": "2015-03-12",
+  "title": "JavaScript语言入门教程-阮一峰（online）",
+  "addr": "https://wangdoc.com/javascript/",
+  "tags": ["javascript"]
+}, {
+  "date": "2015-03-12",
+  "title": "JavaScript语言入门教程-阮一峰",
+  "tags": ["javascript"]
 }]
