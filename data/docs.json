@@ -214,4 +214,13 @@
   "date": "2017-09-17",
   "title": "Eclipse安装lombok插件",
   "tags": ["ide"]
+}, {
+  "date": "2017-10-10",
+  "title": "ECMAScript 6入门-阮一峰（online）",
+  "addr": "http://es6.ruanyifeng.com/",
+  "tags": ["javascript"]
+}, {
+  "date": "2017-10-10",
+  "title": "ECMAScript 6入门-阮一峰",
+  "tags": ["javascript"]
 }]
