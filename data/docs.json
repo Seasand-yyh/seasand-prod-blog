@@ -383,4 +383,8 @@
   "date": "2021-06-18",
   "title": "Windows系统下基于Docker的Kong插件开发",
   "tags": ["kong"]
+}, {
+  "date": "2021-09-06",
+  "title": "PostgreSQL安装指南",
+  "tags": ["postgresql"]
 }]
