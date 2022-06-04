@@ -153,4 +153,8 @@
   "date": "2016-05-13",
   "title": "SQLServer2008安装教程",
   "tags": ["sqlserver"]
+}, {
+  "date": "2016-07-28",
+  "title": "Mybatis基础学习笔记",
+  "tags": ["mybatis"]
 }]
