@@ -15,4 +15,8 @@
   "date": "2013-11-15",
   "title": "GitBook基础教程",
   "tags": ["git"]
+}, {
+  "date": "2013-11-22",
+  "title": "GitBook+Github Pages搭建个人博客",
+  "tags": ["git"]
 }]
