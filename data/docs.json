@@ -133,4 +133,8 @@
   "date": "2015-12-28",
   "title": "手机HTML页面禁止缩放",
   "tags": ["html"]
+}, {
+  "date": "2016-01-06",
+  "title": "单例设计模式的5种实现方式（Java）",
+  "tags": ["design.pattern", "java"]
 }]
