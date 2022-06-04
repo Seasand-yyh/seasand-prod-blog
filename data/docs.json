@@ -351,4 +351,8 @@
   "date": "2020-11-15",
   "title": "Redis从入门到高可用、分布式实践",
   "tags": ["redis"]
+}, {
+  "date": "2020-12-09",
+  "title": "Kafka基础教程",
+  "tags": ["kafka"]
 }]
