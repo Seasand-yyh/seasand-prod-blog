@@ -71,4 +71,8 @@
   "date": "2014-12-22",
   "title": "Windows系统下强制结束Tomcat服务",
   "tags": ["tomcat"]
+}, {
+  "date": "2015-01-02",
+  "title": "Spring快速入门",
+  "tags": ["spring"]
 }]
