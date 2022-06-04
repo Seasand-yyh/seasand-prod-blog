@@ -227,4 +227,8 @@
   "date": "2017-11-17",
   "title": "ES6快速入门",
   "tags": ["javascript"]
+}, {
+  "date": "2017-12-06",
+  "title": "SourceTree使用教程",
+  "tags": ["git"]
 }]
