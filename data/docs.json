@@ -67,4 +67,8 @@
   "date": "2014-11-01",
   "title": "JavaWeb基础知识汇总",
   "tags": ["javaweb"]
+}, {
+  "date": "2014-12-22",
+  "title": "Windows系统下强制结束Tomcat服务",
+  "tags": ["tomcat"]
 }]
