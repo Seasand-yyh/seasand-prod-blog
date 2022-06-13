@@ -392,6 +392,10 @@
   "title": "PostgreSQL安装指南",
   "tags": ["postgresql"]
 }, {
+  "date": "2021-12-09",
+  "title": "多个github账号配置多个sshkey",
+  "tags": ["git"]
+}, {
   "date": "2022-02-20",
   "title": "混沌测试工具ChaosBlade使用指南",
   "tags": ["chaostest"]
