@@ -254,6 +254,11 @@
   "title": "MySQL的预编译功能",
   "tags": ["mysql"]
 }, {
+  "date": "2018-04-08",
+  "title": "Python教程-廖雪峰",
+  "addr": "https://www.liaoxuefeng.com/wiki/1016959663602400",
+  "tags": ["python"]
+}, {
   "date": "2018-05-13",
   "title": "SQLServer开发技巧汇总",
   "tags": ["sqlserver"]
