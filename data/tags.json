@@ -48,6 +48,7 @@
   {"id": "hacking", "name": "黑客攻防", "pid": "network"},
 
   {"id": "database", "name": "数据库", "pid": "database"},
+  {"id": "sql", "name": "SQL语言", "pid": "database"},
   {"id": "mysql", "name": "MySQL", "pid": "database"},
   {"id": "oracle", "name": "Oracle", "pid": "database"},
   {"id": "redis", "name": "Redis", "pid": "database"},
