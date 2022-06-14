@@ -61,6 +61,11 @@
   "title": "JavaWeb基础学习笔记",
   "tags": ["javaweb"]
 }, {
+  "date": "2014-10-07",
+  "title": "SQL教程-廖雪峰",
+  "addr": "https://www.liaoxuefeng.com/wiki/1177760294764384",
+  "tags": ["sql"]
+}, {
   "date": "2014-10-18",
   "title": "MySQL安装图解",
   "tags": ["mysql"]
