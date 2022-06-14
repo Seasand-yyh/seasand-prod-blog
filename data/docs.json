@@ -138,6 +138,11 @@
   "title": "单例设计模式的5种实现方式（Java）",
   "tags": ["design.pattern", "java"]
 }, {
+  "date": "2016-01-22",
+  "title": "JavaScript全栈教程-廖雪峰",
+  "addr": "https://www.liaoxuefeng.com/wiki/1022910821149312",
+  "tags": ["javascript"]
+}, {
   "date": "2016-02-08",
   "title": "百度前端编码规范",
   "tags": ["code.standard"]
