@@ -231,6 +231,11 @@
   "title": "SpringBoot系列学习",
   "tags": ["spring"]
 }, {
+  "date": "2017-02-02",
+  "title": "七天学会NodeJS",
+  "addr": "http://nqdeng.github.io/7-days-nodejs/",
+  "tags": ["nodejs"]
+}, {
   "date": "2017-02-27",
   "title": "MySQL快速入门",
   "tags": ["mysql"]
