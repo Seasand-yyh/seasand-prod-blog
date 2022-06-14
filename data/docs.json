@@ -47,6 +47,11 @@
   "addr": "https://developer.mozilla.org/zh-CN/docs/Web/HTML",
   "tags": ["html"]
 }, {
+  "date": "2014-03-02",
+  "title": "MDN Web Docs - CSS",
+  "addr": "https://developer.mozilla.org/zh-CN/docs/Web/CSS",
+  "tags": ["css"]
+}, {
   "date": "2014-03-08",
   "title": "HTML中引用JS的几种形式",
   "tags": ["html", "javascript"]
