@@ -37,6 +37,11 @@
   "title": "Java基础习题汇总",
   "tags": ["javase"]
 }, {
+  "date": "2014-03-02",
+  "title": "MDN Web Docs",
+  "addr": "https://developer.mozilla.org/zh-CN/docs/Web",
+  "tags": ["frontend"]
+}, {
   "date": "2014-03-08",
   "title": "HTML中引用JS的几种形式",
   "tags": ["html", "javascript"]
@@ -59,7 +64,7 @@
   "tags": ["css"]
 }, {
   "date": "2014-06-13",
-  "title": "MDN Web Docs",
+  "title": "MDN Web Docs - JavaScript",
   "addr": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript",
   "tags": ["javascript"]
 }, {
