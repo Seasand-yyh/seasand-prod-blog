@@ -305,6 +305,11 @@
   "addr": "https://www.typescriptlang.org/",
   "tags": ["javascript"]
 }, {
+  "date": "2018-02-05",
+  "title": "TypeScript中文网",
+  "addr": "https://www.tslang.cn/",
+  "tags": ["javascript"]
+}, {
   "date": "2018-02-21",
   "title": "层层深入Cookie和Session",
   "tags": ["javaweb"]
