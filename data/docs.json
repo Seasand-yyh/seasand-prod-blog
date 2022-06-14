@@ -236,6 +236,11 @@
   "addr": "http://nqdeng.github.io/7-days-nodejs/",
   "tags": ["nodejs"]
 }, {
+  "date": "2017-02-05",
+  "title": "Node.js入门",
+  "addr": "https://www.nodebeginner.org/index-zh-cn.html",
+  "tags": ["nodejs"]
+}, {
   "date": "2017-02-27",
   "title": "MySQL快速入门",
   "tags": ["mysql"]
