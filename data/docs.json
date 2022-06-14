@@ -164,6 +164,11 @@
   "tags": ["javascript"]
 }, {
   "date": "2016-02-08",
+  "title": "百度前端编码规范（online）",
+  "addr": "https://github.com/ecomfe/spec",
+  "tags": ["code.standard"]
+}, {
+  "date": "2016-02-08",
   "title": "百度前端编码规范",
   "tags": ["code.standard"]
 }, {
