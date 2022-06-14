@@ -395,6 +395,11 @@
   "title": "JVM基础知识汇总",
   "tags": ["javase"]
 }, {
+  "date": "2019-11-24",
+  "title": "JerryScript官网",
+  "addr": "https://jerryscript.net/",
+  "tags": ["javascript"]
+}, {
   "date": "2019-12-08",
   "title": "DTX项目Oracle典型案例",
   "tags": ["oracle"]
