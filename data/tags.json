@@ -5,6 +5,7 @@
   {"id": "spring", "name": "Spring", "pid": "java"},
   {"id": "mybatis", "name": "Mybatis", "pid": "java"},
   {"id": "kafka", "name": "Kafka", "pid": "java"},
+  {"id": "zookeeper", "name": "Zookeeper", "pid": "java"},
   {"id": "java.libs", "name": "Java工具库", "pid": "java"},
 
   {"id": "backend", "name": "后端", "pid": "backend"},
