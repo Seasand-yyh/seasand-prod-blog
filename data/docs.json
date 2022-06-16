@@ -455,6 +455,11 @@
   "title": "Redis从入门到高可用、分布式实践",
   "tags": ["redis"]
 }, {
+  "date": "2020-12-02",
+  "title": "Git cherry-pick教程-阮一峰",
+  "addr": "http://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html",
+  "tags": ["git"]
+}, {
   "date": "2020-12-09",
   "title": "Kafka基础教程",
   "tags": ["kafka"]
