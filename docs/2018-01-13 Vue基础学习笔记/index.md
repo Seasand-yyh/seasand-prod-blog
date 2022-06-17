@@ -15,7 +15,7 @@
 
 ~~~html
 <body>
-	<div id="app">{{msg}}</div>
+	<div id="app">{ {msg} }</div>
 </body>
 
 <script src="./lib/vue-2.4.0.js"></script>
@@ -32,17 +32,17 @@ var vm = new Vue({
 4、v-cloak
 
 ~~~html
-<div>{{msg}}</div>
+<div>{ {msg} }</div>
 ~~~
 
-如上所示，在网络延迟的情况下，`{{msg}}`会直接显示在页面上，即插值表达式的闪烁问题，影响用户体验；
+如上所示，在网络延迟的情况下，`{ {msg} }`会直接显示在页面上，即插值表达式的闪烁问题，影响用户体验；
 
 ~~~html
 <style>
 	[v-cloak] {display:none;}
 </style>
 
-<div v-cloak>{{msg}}</div>
+<div v-cloak>{ {msg} }</div>
 ~~~
 
 加上v-cloak，通过观察页面元素，发现页面加载完成前div会加上v-cloak属性，页面加载完毕该属性消失，所以可以设置该属性样式来隐藏。
@@ -55,7 +55,7 @@ var vm = new Vue({
 * v-html：会解析成HTML内容；
 
 ~~~html
-<div>========== {{msg}} ==========</div>
+<div>========== { {msg} } ==========</div>
 结果：<div>========== Hello World ==========</div>
 
 <div v-text="msg">========== ==========</div>
@@ -67,16 +67,16 @@ v-text会覆盖掉原有的内容。
 6、v-bind
 
 ~~~html
-<div v-bind:title="msg">{{msg}}</div>
+<div v-bind:title="msg">{ {msg} }</div>
 
-<div :title="msg">{{msg}}</div>
+<div :title="msg">{ {msg} }</div>
 ~~~
 
 7、v-on
 
 ~~~html
-<div v-on:click="func">{{msg}}</div>
-<div @click="func">{{msg}}</div>
+<div v-on:click="func">{ {msg} }</div>
+<div @click="func">{ {msg} }</div>
 
 <script>
 var vm = new Vue({
@@ -128,7 +128,7 @@ Vue.config.keyCodes.f1=112
 <div id="app">
 	<input type="button" value="开始" @click="start" />
 	<input type="button" value="停止" @click="end" />
-	<h4>{{msg}}</h4>
+	<h4>{ {msg} }</h4>
 </div>
 
 <script src="./lib/vue-2.4.0.js"></script>
@@ -170,18 +170,18 @@ var vm = new Vue({
 12、绑定class样式
 
 ~~~html
-<div :class="['red', 'thin']">{{msg}}</div>
-<div :class="['red', 'thin', isActive?'active':'']">{{msg}}</div>
-<div :class="['red', 'thin', {'active':isActive}]">{{msg}}</div>
-<div :class="{'red':isRed, 'thin':true, 'active':isActive}">{{msg}}</div>
+<div :class="['red', 'thin']">{ {msg} }</div>
+<div :class="['red', 'thin', isActive?'active':'']">{ {msg} }</div>
+<div :class="['red', 'thin', {'active':isActive}]">{ {msg} }</div>
+<div :class="{'red':isRed, 'thin':true, 'active':isActive}">{ {msg} }</div>
 ~~~
 
 13、绑定style样式
 
 ~~~html
-<div :style="{'color':'red', 'font-size':'12px'}">{{msg}}</div>
-<div :style="styleObj">{{msg}}</div>
-<div :style="[styleObj1, styleObj2]">{{msg}}</div>
+<div :style="{'color':'red', 'font-size':'12px'}">{ {msg} }</div>
+<div :style="styleObj">{ {msg} }</div>
+<div :style="[styleObj1, styleObj2]">{ {msg} }</div>
 
 <script type="text/javascript">
 var vm = new Vue({
@@ -200,10 +200,10 @@ var vm = new Vue({
 14、v-for
 
 ~~~html
-<div v-for="i in 10">第{{i}}次</div> //从1开始
-<div v-for="item in list">{{item}}</div>
-<div v-for="(item,index) in list" :key="item">{{index}} === {{item}}</div>
-<div v-for="(value,key,index) in user" :key="key">{{index}} === {{key}} === {{value}}</div>
+<div v-for="i in 10">第{ {i} }次</div> //从1开始
+<div v-for="item in list">{ {item} }</div>
+<div v-for="(item,index) in list" :key="item">{ {index} } === { {item} }</div>
+<div v-for="(value,key,index) in user" :key="key">{ {index} } === { {key} } === { {value} }</div>
 
 <script type="text/javascript">
 var vm = new Vue({
@@ -222,8 +222,8 @@ var vm = new Vue({
 15、v-if与v-show
 
 ~~~html
-<div v-if="flag">{{msg}}</div>
-<div v-show="flag">{{msg}}</div>
+<div v-if="flag">{ {msg} }</div>
+<div v-show="flag">{ {msg} }</div>
 ~~~
 
 当flag为false时，v-if不会在页面生成div元素；v-show会生成但是添加了display:none；
@@ -235,7 +235,7 @@ var vm = new Vue({
 1）全局过滤器
 
 ~~~html
-<div>{{ msg | formatter1 | formatter2('[', ']') }}</div>
+<div>{ { msg | formatter1 | formatter2('[', ']') } }</div>
 
 <script type="text/javascript">
 Vue.filter('formatter1', function(data) {
@@ -257,7 +257,7 @@ var vm = new Vue({
 2）私有过滤器
 
 ~~~html
-<div>{{ date | dateFormat }}</div>
+<div>{ { date | dateFormat } }</div>
 
 <script type="text/javascript">
 var vm = new Vue({
@@ -489,7 +489,7 @@ var vm = new Vue({
 
 <script type="text/javascript">
 Vue.component('myComp', {
-    template: '<div><p>Hello World, {{msg}}</p></div>',
+    template: '<div><p>Hello World, { {msg} }</p></div>',
     data () {
         return {
             msg: 'Vue Component'
@@ -563,7 +563,7 @@ var vm = new Vue({
 
 <script type="text/javascript">
 Vue.component('myComp', {
-    template: '<div><p>{{msg}}</p></div>',
+    template: '<div><p>{ {msg} }</p></div>',
     props: [
         'msg'
     ]
@@ -660,7 +660,7 @@ var vm = new Vue({
 ~~~html
 <div id="app">
 	<input type="button" value="change msg" @click="change" />
-	<p id="msgP">{{msg}}</p>
+	<p id="msgP">{ {msg} }</p>
 </div>
 
 <script type="text/javascript">
@@ -687,7 +687,7 @@ var vm = new Vue({
     },
     beforeMount() { //模板编译完成已在内存中，但是还没渲染到页面
         var msg = document.getElementById('msgP').innerText;
-        console.log(msg); //{{msg}}
+        console.log(msg); //{ {msg} }
     },
     mounted() { //模板已经挂载到页面中
         var msg = document.getElementById('msgP').innerText;
@@ -1106,17 +1106,17 @@ getFile('./file1.txt').then(data => {
 <div id="app">
 	<input type="button" value="toggle" @click="flag=!flag" />
 	<transition :duration="500">
-		<p v-if="flag">{{msg}}</p>
+		<p v-if="flag">{ {msg} }</p>
 	</transition>
 	
 	<!-- 指定前缀的类名 -->
 	<transition name="my">
-		<p v-if="flag">{{msg}}</p>
+		<p v-if="flag">{ {msg} }</p>
 	</transition>
 	
 	<!-- 自定义类名 -->
 	<transition enter-active-class="enterActive" leave-active-class="leaveActive" :duration="{enter:200, leave:300}">
-		<p v-if="flag">{{msg}}</p>
+		<p v-if="flag">{ {msg} }</p>
 	</transition>
 </div>
 
@@ -1148,7 +1148,7 @@ var vm = new Vue({
 		@leave="func"
 		@after-leave="func"
 		@leave-cancelled="func" >
-		<p v-if="flag">{{msg}}</p>
+		<p v-if="flag">{ {msg} }</p>
 	</transition>
 </div>
 
@@ -1212,12 +1212,12 @@ var vm = new Vue({
 	<input type="button" value="add" @click="add"/>
 	<ul>
 		<transition-group appear>
-            <li v-for="item in list" :key="item.id">{{item.name}}</li>
+            <li v-for="item in list" :key="item.id">{ {item.name} }</li>
         </transition-group>
 	</ul>
 	
 	<transition-group appear tag="ul">
-		<li v-for="item in list" :key="item.id">{{item.name}}</li>
+		<li v-for="item in list" :key="item.id">{ {item.name} }</li>
 	</transition-group>
 </div>
 
@@ -1675,7 +1675,7 @@ App.vue
 
 ~~~html
 <template>
-	<div><h3>{{msg}}</h3></div>
+	<div><h3>{ {msg} }</h3></div>
 </template>
 
 <script>
@@ -1720,7 +1720,7 @@ App.vue
 ~~~html
 <template>
 	<div>
-		<h3>{{msg}}</h3>
+		<h3>{ {msg} }</h3>
 		<router-view></router-view>
 	</div>
 </template>
@@ -1858,7 +1858,7 @@ Vue.component('comp1', {
 });
 
 Vue.component('comp2', {
-    template: '<div><p>{{$store.getters.count}}</p></div>',
+    template: '<div><p>{ {$store.getters.count} }</p></div>',
     data() {
         return {
             
