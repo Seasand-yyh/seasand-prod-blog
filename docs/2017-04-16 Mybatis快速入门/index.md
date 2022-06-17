@@ -1775,11 +1775,11 @@ package com.mybatis3.sqlproviders;
 import org.apache.ibatis.jdbc.SQL;
 public class TutorDynaSqlProvider {
 	public String findTutorByIdSql(final int tutorId) {
-		return new SQL() {{
+		return new SQL() { {
 			SELECT("tutor_id as tutorId, name, email");
 			FROM("tutors");
 			WHERE("tutor_id=" + tutorId);
-		}}.toString();
+		} }.toString();
 	}
 }
 ~~~
@@ -1800,11 +1800,11 @@ Tutor findTutorById(int tutorId);
 
 ~~~java
 public String findTutorByIdSql() {
-	return new SQL() {{
+	return new SQL() { {
 		SELECT("tutor_id as tutorId, name, email");
 		FROM("tutors");
 		WHERE("tutor_id = #{tutorId}");
-	}}.toString();
+	} }.toString();
 }
 ~~~
 
@@ -1818,11 +1818,11 @@ Tutor findTutorById(int tutorId);
 
 ~~~java
 public String findTutorByIdSql(final int tutorId) {
-	return new SQL() {{
+	return new SQL() { {
 		SELECT("tutor_id as tutorId, name, email");
 		FROM("tutors");
 		WHERE("tutor_id=" + tutorId);
-	}}.toString();
+	} }.toString();
 }
 ~~~
 
@@ -1840,11 +1840,11 @@ public String findTutorByNameAndEmailSql(Map<String, Object> map) {
 	//you can also get those values using 0,1 keys
 	//String name = (String) map.get("0");
 	//String email = (String) map.get("1");
-	return new SQL() {{
+	return new SQL() { {
 		SELECT("tutor_id as tutorId, name, email");
 		FROM("tutors");
 		WHERE("name=#{name} AND email=#{email}");
-	}}.toString();
+	} }.toString();
 }
 ~~~
 
@@ -1853,7 +1853,7 @@ public String findTutorByNameAndEmailSql(Map<String, Object> map) {
 ~~~java
 public class TutorDynaSqlProvider {
 	public String selectTutorById() {
-		return new SQL() {{
+		return new SQL() { {
 			SELECT("t.tutor_id, t.name as tutor_name, email");
 			SELECT("a.addr_id, street, city, state, zip, country");
 			SELECT("course_id, c.name as course_name, description, start_date, end_date");
@@ -1861,7 +1861,7 @@ public class TutorDynaSqlProvider {
 			LEFT_OUTER_JOIN("addresses a on t.addr_id=a.addr_id");
 			LEFT_OUTER_JOIN("courses c on t.tutor_id=c.tutor_id");
 			WHERE("t.TUTOR_ID = #{id}");
-		}}.toString();
+		} }.toString();
 	}
 }
 
@@ -1906,7 +1906,7 @@ public interface TutorMapper {
 ~~~java
 public class TutorDynaSqlProvider {
 	public String insertTutor(final Tutor tutor) {
-		return new SQL() {{
+		return new SQL() { {
 			INSERT_INTO("TUTORS");
 			if (tutor.getName() != null) {
 				VALUES("NAME", "#{name}");
@@ -1914,7 +1914,7 @@ public class TutorDynaSqlProvider {
 			if (tutor.getEmail() != null) {
 				VALUES("EMAIL", "#{email}");
 			}
-		}}.toString();
+		} }.toString();
 	}
 }
 
@@ -1930,7 +1930,7 @@ public interface TutorMapper {
 ~~~java
 public class TutorDynaSqlProvider {
 	public String updateTutor(final Tutor tutor) {
-		return new SQL() {{
+		return new SQL() { {
 			UPDATE("TUTORS");
 			if (tutor.getName() != null) {
 				SET("NAME = #{name}");
@@ -1939,7 +1939,7 @@ public class TutorDynaSqlProvider {
 				SET("EMAIL = #{email}");
 			}
 			WHERE("TUTOR_ID = #{tutorId}");
-		}}.toString();
+		} }.toString();
 	}
 }
 
@@ -1954,10 +1954,10 @@ public interface TutorMapper {
 ~~~java
 public class TutorDynaSqlProvider {
 	public String deleteTutor(int tutorId) {
-		return new SQL() {{
+		return new SQL() { {
 			DELETE_FROM("TUTORS");
 			WHERE("TUTOR_ID = #{tutorId}");
-		}}.toString();
+		} }.toString();
 	}
 }
 
