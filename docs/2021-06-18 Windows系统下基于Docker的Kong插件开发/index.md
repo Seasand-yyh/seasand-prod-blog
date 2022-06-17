@@ -358,7 +358,7 @@ docker pull pantsel/konga
 命令示例：
 
 ~~~shell
-docker run --rm pantsel/konga -c prepare -a {{adapter}} -u {{connection-uri}}
+docker run --rm pantsel/konga -c prepare -a {adapter} -u {connection-uri}
 ~~~
 
 参数说明：

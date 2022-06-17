@@ -28,10 +28,10 @@ List<Person> getList();
 
 class PersonSql {
 	public String getListSql() {
-		String sql = new SQL() {{
+		String sql = new SQL() { {
 			SELECT("*");
 			FROM("person");
-		}}.toString();
+		} }.toString();
 		return sql;
 	}
 }
