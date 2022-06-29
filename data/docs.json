@@ -111,6 +111,11 @@
   "title": "Spring快速入门",
   "tags": ["spring"]
 }, {
+  "date": "2015-01-09",
+  "title": "Linux就该这么学-刘遄（online）",
+  "addr": "https://www.linuxprobe.com/",
+  "tags": ["linux"]
+}, {
   "date": "2015-02-18",
   "title": "script标签属性async和defer",
   "tags": ["html", "javascript"]
