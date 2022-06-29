@@ -116,6 +116,11 @@
   "addr": "https://www.linuxprobe.com/",
   "tags": ["linux"]
 }, {
+  "date": "2015-01-12",
+  "title": "鸟哥的Linux私房菜（online）",
+  "addr": "https://linux.vbird.org/",
+  "tags": ["linux"]
+}, {
   "date": "2015-02-18",
   "title": "script标签属性async和defer",
   "tags": ["html", "javascript"]
